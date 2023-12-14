@@ -149,7 +149,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 jwt config
 """
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=15),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
     # refresh token automatically refresh after a specific period of time, so that user don't have any need to re-login when refresh token expires
     # but its not a good practice to make it TRUE as if someone steals our refresh token so he can generates it own access token which is not good so we have to blacklist it
